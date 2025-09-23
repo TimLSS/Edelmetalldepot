@@ -1,27 +1,34 @@
-# Rheingold Edelmetalldepot Landing Page
+# Edelmetalldepot Webseite
 
-This project contains an interactive React + Tailwind CSS mockup for the Rheingold Edelmetalldepot landing page. It was bootstrapped with [Vite](https://vite.dev/) and showcases the full onboarding journey, pricing, and FAQs for the digital precious metals depot experience.
+Diese Ordner enthält eine kleine Webseite für das Edelmetalldepot. Sie wurde mit [Vite](https://vite.dev/) und React gebaut.
 
-## Getting started
+## Was du zum Arbeiten brauchst
 
-```bash
-npm install
-npm run dev
-```
+- [Node.js](https://nodejs.org/) ab Version 18 (inklusive npm)
 
-The development server is available on [http://localhost:5173](http://localhost:5173) by default.
+## Seite lokal ansehen
 
-## Available scripts
+1. Öffne ein Terminal in diesem Ordner.
+2. Installiere einmal alle Pakete:
+   ```bash
+   npm install
+   ```
+3. Starte die Vorschau:
+   ```bash
+   npm run dev
+   ```
+4. Öffne anschließend [http://localhost:5173](http://localhost:5173) im Browser.
 
-- `npm run dev` – start the Vite development server with hot module replacement
-- `npm run build` – create an optimized production build
-- `npm run preview` – serve the production build locally for testing
-- `npm run lint` – run ESLint with the project configuration
+## Dateien für das Hochladen bauen
 
-## Tech stack
+1. Baue die fertige Variante:
+   ```bash
+   npm run build
+   ```
+2. Der fertige Code landet im Ordner `docs/`.
+3. Lade genau diesen `docs`-Ordner auf deinen Webspace oder nutze ihn für GitHub Pages (Repository-Einstellungen → Pages → Branch `main`, Ordner `/docs`).
 
-- React 19
-- Tailwind CSS 3
-- Vite 7
+## Weitere Skripte
 
-The layout uses a minimal gold/black/white palette with generous whitespace and rounded cards to match the Rheingold brand direction.
+- `npm run preview` – zeigt den fertigen `docs`-Build lokal an
+- `npm run lint` – prüft den Code auf mögliche Fehler
